@@ -61,6 +61,11 @@ function playSound(file) {
     sound.play();
 }
 
-// Start both timers when the script loads
-startTimer36();
-startTimer5();
+let hasStarted = false;
+function startTimers() {
+    if (!hasStarted) {
+        startTimer36();
+        startTimer5();
+        hasStarted = true;
+    }  
+}
