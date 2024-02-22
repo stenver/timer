@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timer Countdowns</title>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  .timer {
+    font-size: 2rem;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .label {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.2s;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  .container {
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="label">In game</div>
+  <div id="timer36" class="timer">36:00:00</div>
+  <button onclick="subtractTime(1)">Subtract 1 Minute</button>
+  <button onclick="subtractTime(10)">Subtract 10 Minutes</button>
+  <button onclick="subtractTime(60)">Subtract 60 Minutes</button>
+</div>
+
+<div class="container">
+  <div class="label">Out of game</div>
+  <div id="timer5" class="timer">05:00:00</div>
+</div>
+
+<script src="timer.js"></script>
+</body>
+</html>
