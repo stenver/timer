@@ -1,4 +1,4 @@
-let timeInSeconds36 = 36 * 60 * 60; // 36 hours in seconds
+let timeInSeconds36 = 30 * 60 * 60; // 36 hours in seconds
 let timeInSeconds5 = 5 * 60 * 60; // 5 hours in seconds
 let interval36, interval5;
 
